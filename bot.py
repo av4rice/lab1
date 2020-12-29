@@ -35,7 +35,7 @@ def main():
     updater.start_webhook(listen="0.0.0.0",
     port=int(PORT),
     url_path=TOKEN)
-    updater.bot.setWebhook('https://git.heroku.com/lab1av4rice.git' + TOKEN)
+    updater.bot.setWebhook('https://lab1av4rice.herokuapp.com/' + TOKEN)
     updater.idle()
     if __name__ == '__main__':
         main()
