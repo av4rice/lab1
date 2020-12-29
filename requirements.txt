@@ -1,5 +1,4 @@
-certifi==2020.12.5       
-intel-openmp==2020.2                     
+certifi==2020.12.5                          
 mkl==2020.2                      
 mkl-service==2.3.0            
 mkl_fft==1.2.0            
