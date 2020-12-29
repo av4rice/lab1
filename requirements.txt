@@ -1,5 +1,4 @@
 certifi==2020.12.5
-mkl-fft==1.2.0
 mkl-random==1.1.1
 mkl-service==2.3.0
 numpy==1.19.2
