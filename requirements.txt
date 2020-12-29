@@ -1,6 +1,4 @@
 certifi==2020.12.5
-mkl-random==1.1.1
-mkl-service==2.3.0
 numpy==1.19.2
 pip==20.3.3
 setuptools==51.0.0
