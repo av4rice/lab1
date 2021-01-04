@@ -12,7 +12,7 @@ TOKEN = '1463745761:AAGPdVLJ9mXntuVPTLno1lTzlSYSN_KXq-Q'
 def start(update, context):
     """Send a message when the command /start is issued."""
     update.message.reply_text('Hi!')
-def help(update, context):    
+def help(update, context):
     """Send a message when the command /help is issued."""
     update.message.reply_text('Help!')
 def echo(update, context):
@@ -21,6 +21,9 @@ def echo(update, context):
 def error(update, context):
     """Log Errors caused by Updates."""
     logger.warning('Update "%s" caused error "%s"', update, context.error)
+def echo(update, context):
+    """Echo the user message."""
+    update.message.reply_text(update.message.text)
 def main():
     updater = Updater(TOKEN, use_context=True)
 # Get the dispatcher to register handlers
@@ -37,5 +40,5 @@ def main():
     url_path=TOKEN)
     updater.bot.setWebhook('https://lab1av4rice.herokuapp.com/' + TOKEN)
     updater.idle()
-    if __name__ == '__main__':
-        main()
+if __name__ == '__main__':
+    main()
