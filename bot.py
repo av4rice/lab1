@@ -5,9 +5,9 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import os
 PORT = int(os.environ.get('PORT', 5000))
 # Enable logging
-logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-level=logging.INFO)
-logger = logging.getLogger(__name__)
+    logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    level=logging.INFO)
+    logger = logging.getLogger(__name__)
 TOKEN = '1463745761:AAGPdVLJ9mXntuVPTLno1lTzlSYSN_KXq-Q'
 def start(update, context):
     """Send a message when the command /start is issued."""
